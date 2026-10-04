@@ -45,6 +45,10 @@ You can run the tests in a specific browser in headed mode (or with --headed to 
 
 ```npx playwright test --project=chromium --headed```
 
+You can run a specific test by doing the following : 
+
+```npx playwright test locator-syntax-rules.spec.ts``` 
+
 ### When using Typescript, Promise is very important
 - You need to add async to the test name and you need to await the page
 - You also need to add page to the tests as that is the page you are using for all your tests
