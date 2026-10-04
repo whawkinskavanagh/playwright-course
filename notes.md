@@ -18,6 +18,15 @@ Create this at the root of the project and add the following in to it
 
 <img src="image-1.png" alt="Playwright setup example" width="400">
 
+### Setting up your tests
+
+- Remember to have a separate test folder if playwright doesn't automatically set one up
+- Remember to import test from playwright on every test file
+
+```ts
+import { test} from 'playwright/test'
+```
+
 ### How to run tests in Playwright
 
 This will show them running in the terminal
@@ -45,6 +54,15 @@ For example, you may create a before Each for your test to save duplicating on e
 test.beforeEach(async({page}) => {
     await page.goto('https://playground.bondaracademy.com/')
 ```
+
+
+### DOM Terminology
+- Document Object Model
+    - < html >
+    - < head >
+    - < body >
+    - < h1 > . < p > . < div >
+
 
 
 
